@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Please choose one of the options below to experiment with the CTC Traders API</p>
+</div>
+<div>
+    <p>Arrivals Endpoints</p>
+    @Html.ActionLink("Get User Arrivals", "GetUserArrivals", "Arrivals")
+    @Html.ActionLink("Get Arrival By Id", "GetArrivalById", "Arrivals")
+    @Html.ActionLink("Get Arrival Messages", "GetArrivalMessages", "Arrivals")
+    @Html.ActionLink("Get Arrival Message", "GetArrivalMessage", "Arrivals")
+
+    @Html.ActionLink("Send Arrival Notification", "SendArrivalNotification", "Arrivals")
+    @Html.ActionLink("Resend Arrival Notification", "ResubmitArrivalNotification", "Arrivals")
+
+</div>
